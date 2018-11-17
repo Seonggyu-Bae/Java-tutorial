@@ -1,47 +1,47 @@
 class Elevator{
-	//ÇÊµå
+	
 	int floor;
 	boolean isOpen;
 	
-	//¸Ş¼Òµå
+	
 	void open(){
-		System.out.println("¹®ÀÌ ¿­¸³´Ï´Ù.");
+		System.out.println("ë¬¸ì´ ì—´ë¦½ë‹ˆë‹¤.");
 		isOpen = true;
 	}
 	
 	void close(){
-		System.out.println("¹®ÀÌ ´İÈü´Ï´Ù.");
+		System.out.println("ë¬¸ì´ ë‹«í™ë‹ˆë‹¤.");
 		isOpen = false;
 	}
 	
 	void move(int n){
-		close();//¹®À» ´İ°í
+		close();
 
-		if(n>=-2&&n<=10){//nÀÌ À¯È¿ÇÑ °ªÀÏ °æ¿ì nÃşÀ¸·Î ÀÌµ¿	
+		if(n>=-2&&n<=10){
 			try{
 				Thread.sleep(200*Math.abs(floor-n));
 			}catch(Exception e){
 				e.printStackTrace();
 			}
-			if(n ==0)	System.out.println("·ÎºñÃşÀ¸·Î ÀÌµ¿ÇÕ´Ï´Ù.");
-			else if(n >0) System.out.println(n+"ÃşÀ¸·Î ÀÌµ¿ÇÕ´Ï´Ù.");
-			else  System.out.println("ÁöÇÏ"+(-1*n)+"ÃşÀ¸·Î ÀÌµ¿ÇÕ´Ï´Ù.");
+			if(n ==0)	System.out.println("ë¡œë¹„ì¸µìœ¼ë¡œ ì´ë™í•©ë‹ˆë‹¤.");
+			else if(n >0) System.out.println(n+"ì¸µìœ¼ë¡œ ì´ë™í•©ë‹ˆë‹¤.");
+			else  System.out.println("ì§€í•˜"+(-1*n)+"ì¸µìœ¼ë¡œ ì´ë™í•©ë‹ˆë‹¤.");
 			floor = n;
 		}
-		else{//nÀÌ À¯È¿ÇÏÁö ¾ÊÀº °ªÀÎ °æ¿ì ¿À·ù ¸Ş½ÃÁö Ãâ·Â ÈÄ ¸Ş¼Òµå Á¾·á
-			System.out.println(n+"ÃşÀº ¾ø½À´Ï´Ù. ÃşÀ» ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä. ");
+		else{
+			System.out.println(n+"ì¸µì€ ì—†ìŠµë‹ˆë‹¤. ì¸µì„ ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”. ");
 			return;
 		}
-		//ÀÌ ¶óÀÎ±îÁö ¿Ô´Ù´Â ¸»Àº À¯È¿ÇÑ ÃşÀ» ÀÔ·ÂÇß´Ù´Â ¸»ÀÌ¹Ç·Î 
-		report();//µµÂø ÈÄ ÇöÀç Ãş Ç¥½Ã
 		
-		open();//¹® ¿­±â
+		report();
+		
+		open();
 	}
 	
 	void report(){
-		if(floor ==0)	System.out.println("·ÎºñÃşÀÔ´Ï´Ù.");
-		else if(floor>0) System.out.println(floor+"ÃşÀÔ´Ï´Ù.");
-		else  System.out.println("ÁöÇÏ"+(-1*floor)+"ÃşÀÔ´Ï´Ù.");
+		if(floor ==0)	System.out.println("ë¡œë¹„ì¸µì…ë‹ˆë‹¤.");
+		else if(floor>0) System.out.println(floor+"ì¸µì…ë‹ˆë‹¤.");
+		else  System.out.println("ì§€í•˜"+(-1*floor)+"ì¸µì…ë‹ˆë‹¤.");
 	}
 }
 
@@ -51,7 +51,7 @@ class ElevatorTest{
 		Elevator e2 = new Elevator();
 		
 		e1.move(3);
-		// ¾Æ·¡µµ ÁÖ¼® Ç®°í Å×½ºÆ® °¡´É. 
+		// ì•„ë˜ë„ ì£¼ì„ í’€ê³  í…ŒìŠ¤íŠ¸ ê°€ëŠ¥. 
 		//e1.report();
 		//e2.move(-2);
 		//e2.report();
