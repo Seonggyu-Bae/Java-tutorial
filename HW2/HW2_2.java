@@ -6,70 +6,30 @@ class HW2_2{
 		String sign;
 		Scanner s = new Scanner(System.in);
 		
-		System.out.print("Á¤¼ö: ");
+		System.out.print("ì •ìˆ˜: ");
 		a = s.nextInt();
 		
 		if((a & 0b10000000000000000000000000000000)==0){
 			abs = a;
-			sign = "¾ç¼ö";
+			sign = "ì–‘ìˆ˜";
 		}
 		else{
 			abs = -a; //abs = ~a+1
-			sign = "À½¼ö";
+			sign = "ìŒìˆ˜";
 		}
 		
 		
 		
 		
-		/*
-			0b10000000000000000000000000000000 ÀÌ ³Ê¹« ±æ±â ¶§¹®¿¡ 
-			0x80000000 ¶Ç´Â 
-			-Math.pow(2, 31)¸¦ ¾²´Â ¹æ¹ýµµ ÀÖ½À´Ï´Ù. 
-			: 0b10000000000000000000000000000000´Â -2ÀÇ 31½ÂÀÌ±â ¶§¹®ÀÔ´Ï´Ù. ÇÑ¹ø °è»êÇØº¸¼¼¿ä~~ 
-		*/
-		/*
-			´Ü, -Math.pow(2, 31) °á°ú´Â ½Ç¼öÀÌ±â ¶§¹®¿¡ ¾Æ·¡¿Í °°ÀÌ int Å¸ÀÔÀ¸·Î Ä³½ºÆÃ(ºñÆ®¿¬»êÀº Á¤¼öÇü¿¡¸¸ °¡´ÉÇÏ±â ¶§¹®)ÇØÁà¾ßÇÕ´Ï´Ù. 
-			if((a & -(int)Math.pow(2, 31))==0){
-				abs = a;
-				sign = "¾ç¼ö";
-			}
-			else{
-				abs = -a; //abs = ~a+1
-				sign = "À½¼ö";
-			}
-		*/
-
-		/*
 		
-		ÀÌ ¹æ¹ý ¿Ü¿¡µµ ½ÃÇÁÆ®¿¬»êÀÚ¸¦ »ç¿ëÇÑ´Ù¸é
-		
-		
-			if((a>>31) == 0)){
-				abs = a;
-				sign = "¾ç¼ö";
-			}
-			else{
-				abs = -a; //abs = ~a+1
-				sign = "À½¼ö";
-			}
-		
-		*/
-		
-		/* ºÎÈ£È®ÀÎ
-			ºÎÈ£´Â MSB(MSB:1ÀÌ¸é À½¼ö, 0ÀÌ¸é ¾ç¼ö)¸¦ ÅëÇØ ¾Ë ¼ö ÀÖ´Ù. 
-			intÇüÀº 32ºñÆ®ÀÌ¹Ç·Î ÃÖ»óÀ§ ºñÆ®°¡ 1ÀÎÁö ¿©ºÎ¸¦ ÆÇ´ÜÇÏ±â À§ÇØ¼­´Â
-			ÀÔ·Â°ªÀ» 31ºñÆ®¸¸Å­ ¿À¸¥ÂÊÀ¸·Î ½ÃÇÁÆ®ÇÏ°í ±× °ªÀÌ 1ÀÎÁö È®ÀÎÇÏ¸é µÈ´Ù. 
-			((input>>31)&1)==1 ÀÌ ÂüÀÌ¸é À½¼ö, °ÅÁþÀÌ¸é ¾ç¼öÀÌ´Ù. 
-			
-		*/
 		
 		
 		quo = abs>>2;
-		res = abs&0b11;		// 4·Î ³ª´« ³ª¸ÓÁö´Â ¸¶Áö¸· 2ºñÆ®(0, 1, 2,3 Áß ÇÏ³ª )ÀÌ±â ¶§¹®¿¡  0b11°ú AND ½ÃÅ°¸é(¸¶Áö¸· 2ºñÆ®¸¸ ³²À½)¾Ë¾Æ³¾ ¼ö ÀÖ´Ù. 
+		res = abs&0b11;		// 4ë¡œ ë‚˜ëˆˆ ë‚˜ë¨¸ì§€ëŠ” ë§ˆì§€ë§‰ 2ë¹„íŠ¸(0, 1, 2,3 ì¤‘ í•˜ë‚˜ )ì´ê¸° ë•Œë¬¸ì—  0b11ê³¼ AND ì‹œí‚¤ë©´(ë§ˆì§€ë§‰ 2ë¹„íŠ¸ë§Œ ë‚¨ìŒ)ì•Œì•„ë‚¼ ìˆ˜ ìžˆë‹¤. 
 		
-		System.out.format("\"%d´Â %sÀÔ´Ï´Ù. ÀÌ ¼öÀÇ Àý´ñ°ªÀº %dÀÌ°í,\n", a, sign, abs);
-		System.out.format("\tÀÌ¸¦ 4·Î ³ª´« ¸òÀº %dÀÌ°í,\n", quo);
-		System.out.format("\t\t³ª¸ÓÁö´Â %dÀÔ´Ï´Ù.\"\n", res);
+		System.out.format("\"%dëŠ” %sìž…ë‹ˆë‹¤. ì´ ìˆ˜ì˜ ì ˆëŒ“ê°’ì€ %dì´ê³ ,\n", a, sign, abs);
+		System.out.format("\tì´ë¥¼ 4ë¡œ ë‚˜ëˆˆ ëª«ì€ %dì´ê³ ,\n", quo);
+		System.out.format("\t\të‚˜ë¨¸ì§€ëŠ” %dìž…ë‹ˆë‹¤.\"\n", res);
 		
 	}
 }
