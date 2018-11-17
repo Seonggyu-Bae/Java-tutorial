@@ -4,8 +4,7 @@ class HW1_3{
 	public static void main(String [] args){
 		int randomNumber = (int)(Math.random()*10+20);
 		
-		System.out.format("»ı¼ºµÈ ³­¼ö´Â %dÀÔ´Ï´Ù.\n", randomNumber);	
-		//format() ¸Ş¼Òµå´Â printf() ¸Ş¼Òµå¿Í µ¿ÀÏÇÏ´Ù°í º¸½É µË´Ï´Ù. 
-		//Â÷ÀÌÁ¡Àº String Å¬·¡½º¿¡¼­ Á¦°øÇÏ°í ÀÖ´ÂÁö Á¤µµ·Î º¼ ¼ö ÀÖ½À´Ï´Ù. (³ªÁß¿¡ String Å¬·¡½º ´Ù·ê¶§ ´Ù½Ã ¼³¸íµå¸®°Ú½À´Ï´Ù. ^____^)
+		System.out.format("ìƒì„±ëœ ë‚œìˆ˜ëŠ” %dì…ë‹ˆë‹¤.\n", randomNumber);	
+		
 	}
 }
