@@ -6,24 +6,24 @@ class HW4_4{
 		int beforeYear, beforeMonth, beforeDate;
 		Scanner s = new Scanner(System.in);
 		
-		System.out.print("¿À´Ã ³âµµ: ");
+		System.out.print("ì˜¤ëŠ˜ ë…„ë„: ");
 		year = s.nextInt();
-		System.out.print("¿À´Ã ¿ù: ");
+		System.out.print("ì˜¤ëŠ˜ ì›”: ");
 		month = s.nextInt();
-		System.out.print("¿À´Ã ÀÏ: ");
+		System.out.print("ì˜¤ëŠ˜ ì¼: ");
 		date = s.nextInt();
 		
 		while(true){
-			System.out.print("¸çÄ¥ Àü: ");
+			System.out.print("ë©°ì¹  ì „: ");
 			before = s.nextInt();
 			if(before>0) break;
-			System.out.println("[ÀÔ·Â¿À·ù]¾ç¼ö·Î ÀÔ·ÂÇØÁÖ¼¼¿ä. ");
+			System.out.println("[ì…ë ¥ì˜¤ë¥˜]ì–‘ìˆ˜ë¡œ ì…ë ¥í•´ì£¼ì„¸ìš”. ");
 		}
-		beforeDate = -before + date;  //ÇöÀç ³¯Â¥¿¡¼­ ±Ã±İÇÑ ³¯¸¸Å­ »©¼­ beforeDate¿¡ ÀúÀå
+		beforeDate = -before + date;  
 		beforeMonth = month;
 		beforeYear = year; 
 		
-		while(beforeDate<=0){ //beforeDate°¡ ¾ç¼ö¶ó¸é ±×´ë·Î ³â¿ùÀÏÀ» Ãâ·ÂÇÏ°í ³¯Â¥°¡ À½¼ö¶ó¸é month¸¦ °¨¼Ò½ÃÅ°°í, ³¯Â¥¸¦ ¾ç¼ö·Î ¹Ù²ãÁÖ´Â °úÁ¤À» °è¼ÓÇØ¼­ ÁøÇà 
+		while(beforeDate<=0){ 
 			if(beforeMonth==1){
 				beforeYear--;
 				beforeMonth = 12;
@@ -43,7 +43,7 @@ class HW4_4{
 			}
 		}
 		
-		System.out.format("%dÀÏ ÀüÀÇ ³¯Â¥: %d³â %d¿ù %dÀÏ\n", before, beforeYear, beforeMonth, beforeDate);
+		System.out.format("%dì¼ ì „ì˜ ë‚ ì§œ: %dë…„ %dì›” %dì¼\n", before, beforeYear, beforeMonth, beforeDate);
 		
 	}
 }
