@@ -4,20 +4,20 @@ class HW4_5{
 	public static void main(String [] args){
 		Scanner s = new Scanner(System.in);
 		String word;
-		int nbOfMoeum = 0, nbOfJaeum=0;//°¢°¢ ¸ğÀ½ °³¼ö
+		int nbOfMoeum = 0, nbOfJaeum=0;
 		
 		if(args.length != 1){
-			System.out.println("[ÀÔ·Â¿À·ù]ÇÏ³ªÀÇ ¿µ´Ü¾î¸¦ ÀÔ·ÂÇÏÁö ¾Ê¾Æ ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù. ");
+			System.out.println("[ì…ë ¥ì˜¤ë¥˜]í•˜ë‚˜ì˜ ì˜ë‹¨ì–´ë¥¼ ì…ë ¥í•˜ì§€ ì•Šì•„ í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤. ");
 			return;
 		}
 		
-		word = args[0]; //Ä¿¸Çµå¶óÀÎ¿¡ ÀÔ·ÂÇÑ ÇÏ³ªÀÇ ´Ü¾î¸¦ word¿¡ ÀúÀå
+		word = args[0]; 
 		
 		for(int i=0; i<word.length(); i++){
-			if(((word.charAt(i)>='A')&&(word.charAt(i)<='Z'))||((word.charAt(i)>='a')&&(word.charAt(i)<='z'))){//wordÀÇ i¹øÂ° ¹®ÀÚ°¡ ¾ËÆÄºªÀÌ¶ó Ä«¿îÆÃ
+			if(((word.charAt(i)>='A')&&(word.charAt(i)<='Z'))||((word.charAt(i)>='a')&&(word.charAt(i)<='z'))){
 				switch(word.charAt(i)){
-				case 'A': case 'E': case 'I': case 'O': case 'U': 
-				case 'a': case 'e': case 'i': case 'o': case 'u': 
+					case 'A': case 'E': case 'I': case 'O': case 'U': 
+					case 'a': case 'e': case 'i': case 'o': case 'u': 
 					nbOfMoeum++;
 					break;
 				default: 
@@ -27,7 +27,7 @@ class HW4_5{
 			}
 		}
 		
-		System.out.println("ÀÚÀ½ °³¼ö: "+nbOfJaeum);
-		System.out.println("¸ğÀ½ °³¼ö: "+nbOfMoeum);
+		System.out.println("ììŒ ê°œìˆ˜: "+nbOfJaeum);
+		System.out.println("ëª¨ìŒ ê°œìˆ˜: "+nbOfMoeum);
 	}
 }
