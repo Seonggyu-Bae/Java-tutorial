@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class HW4_5{
+class HW4_4{
 	public static void main(String [] args){
 		Scanner s = new Scanner(System.in);
 		String word;
