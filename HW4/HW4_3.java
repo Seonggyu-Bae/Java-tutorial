@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class HW4_4{
+class HW4_3{
 	public static void main(String [] args){
 		int year, month, date, before; 
 		int beforeYear, beforeMonth, beforeDate;
