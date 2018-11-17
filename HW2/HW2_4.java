@@ -6,19 +6,14 @@ class HW2_4{
 		int score;
 		
 		
-		System.out.print("Á¡¼ö: ");
+		System.out.print("ì ìˆ˜: ");
 		score = s.nextInt();
 		
-		if(score>100|| score <0) System.out.println("Àß¸øµÈ Á¡¼öÀÔ´Ï´Ù. ");
-		else if(score>=90) System.out.println("¼ö");
-		else if(score>=80) System.out.println("¿ì");  /*
-		else if(80<=score<90)´Â ºÒ°¡´ÉÇÕ´Ï´Ù. 
-		else if(score>=80&& score<90)°ú °°ÀÌ ¾µ¼ö´Â ÀÖÁö¸¸
-		14¹øÂ° ¶óÀÎ±îÁö ¿Ô´Ù´Â ¸»Àº 90Á¡À» ³ÑÁö ¾Ê¾Ò´Ù´Â ¸»ÀÌ±â ¶§¹®¿¡ 
-		score<90´Â »ý·« °¡´ÉÇÕ´Ï´Ù!
-		*/
-		else if(score>=70) System.out.println("¹Ì");
-		else if(score>=60) System.out.println("¾ç");
-		else System.out.println("°¡");
+		if(score>100|| score <0) System.out.println("ìž˜ëª»ëœ ì ìˆ˜ìž…ë‹ˆë‹¤. ");
+		else if(score>=90) System.out.println("ìˆ˜");
+		else if(score>=80) System.out.println("ìš°");  
+		else if(score>=70) System.out.println("ë¯¸");
+		else if(score>=60) System.out.println("ì–‘");
+		else System.out.println("ê°€");
 	}
 }
