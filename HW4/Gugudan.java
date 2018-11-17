@@ -1,13 +1,12 @@
 import java.util.Scanner;
-//break; ¹Ì »ç¿ë
 class Gugudan{
 	public static void main(String [] args){
 		Scanner s = new Scanner(System.in);
 		int col;
-		System.out.print("¸î ¿­¾¿?? ");
+		System.out.print("ëª‡ ì—´ì”©?? ");
 		col=s.nextInt();
 		
-		for(int i=0; col*i<8;i++){ //2´ÜºÎÅÍ 9´Ü±îÁö ÃÑ 8°³ÀÌ±â ¶§¹®¿¡ 8¹ø ¹Ýº¹ÇÏ°í ³¡³»±â
+		for(int i=0; col*i<8;i++){ 
 			for(int j=1; j<=9; j++){
 				for(int k=2+col*i; k<2+col*(i+1);k++){
 					if(k<=9)	System.out.printf("%d X %d = %2d\t", k, j, k*j);
