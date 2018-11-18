@@ -6,23 +6,23 @@ public class WorkTest{
 		int numOfWork, workPerEmployee;
 		
 		Scanner s = new Scanner(System.in);
-		System.out.print("ÃÑ ¾÷¹« °³¼ö: ");
+		System.out.print("ì´ ì—…ë¬´ ê°œìˆ˜: ");
 		try{
-			numOfWork = s.nextInt();//InputMismatchException ¹ß»ı °¡´É: »ç¿ëÀÚ°¡ ÇÑ±Û·Î ¾÷¹«¼ö¸¦ ÀÔ·ÂÇßÀ» ¶§. 
-			if(numOfWork<0) throw new NegativeWorkException();//numOfWork<0ÀÎ °æ¿ì, »ç¿ëÀÚ Á¤ÀÇ ¿¹¿Ü NegativeWorkException¸¦ ¹ß»ı!!
+			numOfWork = s.nextInt();
+			if(numOfWork<0) throw new NegativeWorkException();
 			workPerEmployee = (int)(Math.ceil(numOfWork/10.0));
-			System.out.println("ÇÑ »ç¿øÀÇ ÃÖ´ë ¾÷¹« ¼ö: "+workPerEmployee);
+			System.out.println("í•œ ì‚¬ì›ì˜ ìµœëŒ€ ì—…ë¬´ ìˆ˜: "+workPerEmployee);
 		}catch(NegativeWorkException nwe){
-			System.out.println("¾÷¹«¼ö´Â À½¼öÀÏ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ì—…ë¬´ìˆ˜ëŠ” ìŒìˆ˜ì¼ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		}catch(InputMismatchException ime){
-			System.out.println("¾÷¹«¼ö´Â ¾Æ¶óºñ¾Æ ¼ıÀÚ·Î ÀÔ·ÂÇØÁÖ¼¼¿ä. ");
+			System.out.println("ì—…ë¬´ìˆ˜ëŠ” ì•„ë¼ë¹„ì•„ ìˆ«ìë¡œ ì…ë ¥í•´ì£¼ì„¸ìš”. ");
 		}
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á!");
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ!");
 	}
 }
 
 class NegativeWorkException extends Exception{
 	NegativeWorkException(){
-		super("¾÷¹«¼ö À½¼ö ¿¹¿Ü");
+		super("ì—…ë¬´ìˆ˜ ìŒìˆ˜ ì˜ˆì™¸");
 	}
 }
