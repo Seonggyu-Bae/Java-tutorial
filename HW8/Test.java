@@ -22,10 +22,10 @@ class Member{
 
 class Test{
 	public static void main(String[] args){
-		Member m1=new Member(24,"ÇãÁ¤ºó");
-		Member m2=new Member(23,"¹è¼º±Ô");
-		Member m3=new Member(24,"ÃÖº´Çõ");
+		Member m1=new Member(24,"í˜¸ë‚ ë‘");
+		Member m2=new Member(23,"ë©”ì‹œ");
+		Member m3=new Member(24,"");
 		Member m4=new Member();
-		System.out.println("ÀÌ µ¿È£È¸ÀÇ ÀÎ¿øÀº"+Member.numofm()+"ÀÔ´Ï´Ù.");
+		System.out.println("ì´ ë™í˜¸íšŒì˜ ì¸ì›ì€"+Member.numofm()+"ì…ë‹ˆë‹¤.");
 	} 
 }
