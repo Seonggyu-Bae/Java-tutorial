@@ -1,46 +1,46 @@
 class Figure{
-	protected double perimeter;	//µÑ·¹±æÀÌ
-	protected double area;	//³ĞÀÌ
-	public Figure(){} //¿©±â¿¡¼­ µğÆúÆ® »ı¼ºÀÚ´Â ¾Æ¹« ÀÏµµ ÇÏÁö ¾ÊÀ½
+	protected double perimeter;	
+	protected double area;	
+	public Figure(){} 
 	public Figure(double perimeter, double area){
 		this.perimeter = perimeter;
 		this.area = area;
 	}
-	public String toString(){	//(Object Å¬·¡½ºÀÇ)toString¸Ş¼­µå ÀçÁ¤ÀÇ
-		return String.format("ÀÌ µµÇüÀº %sÀÌ°í, µÑ·¹´Â %.2f, ³ĞÀÌ´Â %.2fÀÔ´Ï´Ù.\n", this.getClass().getName(), perimeter, area); //this.getClass().getName()
+	public String toString(){	
+		return String.format("ì´ ë„í˜•ì€ %sì´ê³ , ë‘˜ë ˆëŠ” %.2f, ë„“ì´ëŠ” %.2fì…ë‹ˆë‹¤.\n", this.getClass().getName(), perimeter, area); 
 	}
 }
 
 class Circle extends Figure{
 	protected double radius;
-	public Circle(){ //µğÆúÆ® »ı¼ºÀÚ´Â ºñ¿öµÖµµ µÇÁö¸¸ ¿©±â¿¡¼± ¹İÁö¸§ÀÌ 1ÀÎ ¿ø »ı¼ºÇÏ°Ô ÀÛ¼º
+	public Circle(){ 
 		this(1);
 	}
-	public Circle(double r){	//¹İÁö¸§À» ÀÎÀÚ·Î ¹Ş¾Æ ¹İÁö¸§, ³ĞÀÌ, µÑ·¹±æÀÌ ÇÊµå ÃÊ±âÈ­
+	public Circle(double r){	
 		super(Math.PI*2*r, Math.PI*r*r);
 		this.radius = r;
 	}
-	public String toString(){	//toString¸Ş¼­µå ÀçÁ¤ÀÇ
-		return super.toString()+"¶Ç, ¹İÁö¸§Àº "+radius+"ÀÔ´Ï´Ù.\n";		
+	public String toString(){	
+		return super.toString()+"ë˜, ë°˜ì§€ë¦„ì€ "+radius+"ì…ë‹ˆë‹¤.\n";		
 	} 
 	public boolean equals(Object o){
 		return this.radius ==((Circle)o).radius;
 	}
 }
 
-class EquilateralTriangle extends Figure{//¿ø°ú À¯»ç.
+class EquilateralTriangle extends Figure{
 	protected double side;
 	protected double height;
-	EquilateralTriangle(){ //¿ø°ú ¸¶Âù°¡Áö·Î µğÆúÆ® »ı¼ºÀÚ´Â ÇÑº¯ÀÇ ±æÀÌ°¡ 1ÀÎ Á¤»ï°¢Çü »ı¼º
+	EquilateralTriangle(){ 
 		this(1);
 	}
-	EquilateralTriangle(double s){ //ÇÑº¯ÀÇ ±æÀÌ°¡  sÀÎ Á¤»ï°¢Çü »ı¼º
+	EquilateralTriangle(double s){ 
 		super(3*s, Math.sqrt(3)/4*s*s);
 		side = s;
 		height = Math.sqrt(3)/2*side;
 	}
 	public String toString(){
-		return String.format("%sÀÌ »ï°¢ÇüÀÇ ÇÑº¯ÀÇ ±æÀÌ´Â %.2fÀÌ°í, ³ôÀÌ´Â %.2fÀÔ´Ï´Ù.\n", super.toString(),side, height);		
+		return String.format("%sì´ ì‚¼ê°í˜•ì˜ í•œë³€ì˜ ê¸¸ì´ëŠ” %.2fì´ê³ , ë†’ì´ëŠ” %.2fì…ë‹ˆë‹¤.\n", super.toString(),side, height);		
 	} 
 }
 
