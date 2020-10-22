@@ -1,10 +1,10 @@
 # 요약문
 
 - 아직안씀
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
+  - 뭐
+  - 쓰
+  - 지
 
 # 교과목형
 
-  -  과목코드/교과목명/수강년도/학기/담당교수
+  -  COMP217002/자바프로그래밍/2018년도/1학기/권혜진교수님
