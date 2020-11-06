@@ -4,10 +4,10 @@
   # HW1 은 입력을 받아 출력하는 정도의 기본적인 코드이다. 
   
   # HW2는 if else 문들을 이용한
-   ### [HW2_1](https://github.com/Seonggyu-Bae/Java-tutorial/blob/master/HW2/HW2_1.java). 정수의 단위 정리  
-   ### [HW2_2](https://github.com/Seonggyu-Bae/Java-tutorial/blob/master/HW2/HW2_2.java). 정수가 양수인지 음수인지 판별,정수의 절댓값,정수의 나눗셈  
-   ### [HW2_3](https://github.com/Seonggyu-Bae/Java-tutorial/blob/master/HW2/HW2_3.java). 2차원좌표를 입력받고 직사각형인지 아닌지 판별하여 직사각형이면 둘레, 넓이를 계산  
-   ### [HW2_4](https://github.com/Seonggyu-Bae/Java-tutorial/blob/master/HW2/HW2_4.java). 점수를 입력받아 수,우,미,양,가 로 판별  
+   ### - [HW2_1](https://github.com/Seonggyu-Bae/Java-tutorial/blob/master/HW2/HW2_1.java). 정수의 단위 정리  
+   ### - [HW2_2](https://github.com/Seonggyu-Bae/Java-tutorial/blob/master/HW2/HW2_2.java). 정수가 양수인지 음수인지 판별,정수의 절댓값,정수의 나눗셈  
+   ### - [HW2_3](https://github.com/Seonggyu-Bae/Java-tutorial/blob/master/HW2/HW2_3.java). 2차원좌표를 입력받고 직사각형인지 아닌지 판별하여 직사각형이면 둘레, 넓이를 계산  
+   ### - [HW2_4](https://github.com/Seonggyu-Bae/Java-tutorial/blob/master/HW2/HW2_4.java). 점수를 입력받아 수,우,미,양,가 로 판별  
   
   # HW3 은 if else case for 문들을 이용한  
    ### [HW3_1](https://github.com/Seonggyu-Bae/Java-tutorial/blob/master/HW3/HW3_1.java). 두 실수의 사칙연산.
