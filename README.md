@@ -31,14 +31,16 @@
   **엘리베이터를 구현하였다**
   
   **[HW5_3](https://github.com/Seonggyu-Bae/Java-tutorial/blob/master/HW5/HW5_3.java)**
+  
   **두 문자열을 매개변수로 받아 두 문장을 연결한 문장을 반환하는 메소드**  
   
   **첫 번째 문자열을 모두 대문자로 바꾸는 메소드**
   
   **첫 번째 문자열과 두번째 문자열이 일치하는지 확인하는 메소드**      
   
-  ### [HW5_4](https://github.com/Seonggyu-Bae/Java-tutorial/blob/master/HW5/HW5_4.java)
-  ### 문자열과 검색할 단어를 매개변수로 받아 문자열에 단어가 몇개있는지 검색해주는 메소드 
+  **[HW5_4](https://github.com/Seonggyu-Bae/Java-tutorial/blob/master/HW5/HW5_4.java)**
+  
+  **문자열과 검색할 단어를 매개변수로 받아 문자열에 단어가 몇개있는지 검색해주는 메소드** 
       
   # HW6 은 배열 개념을 도입하여  
    ### [ArrTest1](https://github.com/Seonggyu-Bae/Java-tutorial/blob/master/HW6/ArrTest1.java)
